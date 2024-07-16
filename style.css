@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: #3d087b;
+    font-family: "Manrope", sans-serif;
+    height: max-content;
+ 
+}
+ 
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px;
+    height: 95vh;
+ 
+}
+ 
+.innercontainer1 {
+    /* border: 2px solid black; */
+    width: 45vw;
+    height: 95vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+ 
+}
+ 
+.innercontainer2 {
+ 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.clocklogo img {
+    width: 150px;
+}
+ 
+.timecard {
+    background-color: white;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 10px;
+    margin-top: 30px;
+}
+ 
+.card1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-sizing: border-box; */
+ 
+}
+.line{
+    color: #C2C2C2;
+    font-size: 40px;
+    margin-left: 10px;
+ 
+}
+ 
+.selectfrom{
+    width: 250px;
+    height: 30px;
+}
+.card2 {
+    background-color: #694099;
+    color: white;
+    /* font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-900) 27px/34px var(--unnamed-font-family-bauhaus-hv-bt); */
+    margin-top: 10px;
+    padding: 2px 20px;
+    border-radius: 5px;
+    text-align: left;
+    box-sizing: border-box;
+ 
+}
+.card3{
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    color: #f25cfe;
+    box-sizing: border-box;
+ 
+}
+.button{
+color: black;
+padding: 10px 90px;
+border-radius: 4px;
+font-size: 1em;
+font-weight: bold;
+text-decoration: none;
+display: block;
+width: 300px;
+margin: 11px 20px 0 0;
+border: none;
+background: transparent linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%);
+}
+ 
+ 
+ 
+.button:hover{
+   background-image:linear-gradient(to right,#f1a7c5 0%,#fc5eff 40%, #cb52f8 81%,  #6e54ec 100% ); 
+}
+ 
+ 
+.card32{
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    padding: 20px 30px;
+    background-color: #694099;
+}
+ 
+.clockimage{
+    width: 100%;
+}
+.divsettime{
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    padding: 40px 20px;
+    background: #fff;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#settime{
+    font-family: "Bauhaus Hv BT", sans-serif;
+    color: #8e53f0;
+    font-size: 2em;
+}
+.time{
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    padding: 20px 30px;
+    background: #fff;
+    max-width: 536px;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.time p {
+    color: #3d087b;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.time2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hours, .mins, .sec{
+    background: url(./images/timeline.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 4px 18px;
+    text-align: center;
+    margin: 0 5px;
+}
+.time2 div p{
+    color: #8a11bf;
+    font-size: 1.8em;
+    font-weight: 300;
+}
+.ampm{
+    background: url(./images/AM_svg.svg);   
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 24px;
+    color: white;
+}
+.time.background1{
+    position: absolute;
+    background: #ffffff;
+    border-radius: 10px;
+    opacity: 71%;
+    z-index: -1;
+    top: 23px;
+    right: 106px;
+    width: 435px;
+}  
+.time.background2{
+    position: absolute;
+    background: #ffffff;
+    border-radius: 10px;
+    opacity: 22%;
+    z-index: -2;
+    top: 36px;
+    right: 136px;
+    width: 374px;
+}
+ 
+@media only screen and (min-width: 280px) and (max-width:600px) {
+ 
+    .container {
+        flex-direction: column;
+        height: max-content;
+        width: max-content;
+        margin: auto;
+ 
+    }
+ 
+    .innercontainer1 {
+        width: 100%;
+        height: max-content;
+        margin: auto;
+ 
+    }
+ 
+    .innercontainer2 {
+        margin-top:30px;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    .time.background1{
+        position: relative;
+        top: -651px;
+        right: -58px;
+    }  
+    .time.background2{  
+        position: relative;
+        top: -766px;
+        right: -96px
+    }
+    .divsettime{
+        margin-top: -208px;
+    }
+    .clocklogo{
+        margin: auto;
+    }
+    .card3{
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+        width: 100%;
+        margin-bottom: 10px;
+}
